@@ -1,8 +1,9 @@
 Source: libpng1.6
 Section: libs
 Priority: optional
-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Uploaders: Nobuhiro Iwamatsu <iwamatsu@debian.org>,
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+XSBC-Pexip-Original-Uploaders: Nobuhiro Iwamatsu <iwamatsu@debian.org>,
            Gianfranco Costamagna <locutusofborg@debian.org>,
            Tobias Frost <tobi@debian.org>
 Build-Depends: debhelper (>= 10), zlib1g-dev, mawk
@@ -10,6 +11,7 @@ Standards-Version: 3.9.8
 VCS-Git: https://anonscm.debian.org/git/collab-maint/libpng1.6.git
 VCS-Browser: https://anonscm.debian.org/cgit/collab-maint/libpng1.6.git
 Homepage: http://libpng.org/pub/png/libpng.html
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: libpng16-16
 Architecture: any
