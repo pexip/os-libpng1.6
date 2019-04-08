@@ -1,86 +1,77 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: libpng 
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libpng
 Source: http://www.libpng.org/pub/png/
 
 Files: *
-Copyright: Copyright (c) 1998-2016 Glenn Randers-Pehrson
+Copyright: 1995-2019 The PNG Reference Library Authors.
+           1998-2018 Glenn Randers-Pehrson
+           2018-2019 Cosmin Truta
+License: libpng
+
+Files: arm/arm_init.c
+       arm/filter_neon_intrinsics.c
+       arm/palette_neon_intrinsics.c
+Copyright: 2018 Cosmin Truta
+           2017-2018 Arm Holdings. All rights reserved.
+           2014,2016 Glenn Randers-Pehrson
 License: libpng
 
 Files: contrib/pngminus/*
-Copyright: Willem van Schaik, 1999
+Copyright: 1999 Willem van Schaik
 License: expat
 
 Files: contrib/tools/*
-Copyright: 2013-2016 John Cunningham Bowler
-License: libpng
-
-Files: contrib/intel/*
-Copyright:  2016 Google, Inc.
-            2014,2016 Glenn Randers-Pehrson
+Copyright: 2013-2017 John Cunningham Bowler
 License: libpng
 
 Files: pngwutil.c pngstruct.h pngwrite.c pnginfo.h pngrio.c png.h
-	pngread.c pngwio.c pngrutil.c pngmem.c pngget.c pngtest.c
-	pngrtran.c pngpriv.h pngset.c pngpread.c
-	pngdebug.h pngerror.c pngwtran.c png.c pngtrans.c example.c
+       pngread.c pngwio.c pngrutil.c pngmem.c pngget.c pngtest.c
+       pngrtran.c pngpriv.h pngset.c pngpread.c
+       pngdebug.h pngerror.c pngwtran.c png.c pngtrans.c example.c
 Copyright: 1996, 1997 Andreas Dilger
-	1995, 1996 Guy Eric Schalnat, Group 42, Inc.
-	1998-2013 Glenn Randers-Pehrson
+           1995, 1996 Guy Eric Schalnat, Group 42, Inc.
+           1998-2013 Glenn Randers-Pehrson
 License: libpng
 
 Files: contrib/gregbook/rpng-win.c contrib/gregbook/rpng2-x.c contrib/gregbook/rpng-x.c
-	contrib/gregbook/readpng2.h contrib/gregbook/rpng2-win.c
-Copyright: 1998-2008 Greg Roelofs. All rights reserved
+       contrib/gregbook/readpng2.h contrib/gregbook/rpng2-win.c
+Copyright: 1998-2008 Greg Roelofs
 License: GPL-2+ or BSD-like-with-advertising-clause
 
 Files: contrib/gregbook/writepng.h contrib/gregbook/readppm.c
-	contrib/gregbook/readpng.h contrib/gregbook/wpng.c
-	contrib/gregbook/readpng.c contrib/gregbook/readpng2.c
-	contrib/gregbook/writepng.c contrib/visupng/resource.h
-	contrib/visupng/cexcept.h
+       contrib/gregbook/readpng.h contrib/gregbook/wpng.c
+       contrib/gregbook/readpng.c contrib/gregbook/readpng2.c
+       contrib/gregbook/writepng.c contrib/visupng/resource.h
+       contrib/visupng/cexcept.h
 Copyright: 2000-2008 Adam M. Costello and Cosmin Truta
 License: GPL-2+ or BSD-like-with-advertising-clause
 
 Files: contrib/visupng/PngFile.c contrib/visupng/PngFile.h
-	contrib/visupng/VisualPng.c
-Copyright: 2000, Willem van Schaik
-License: libpng
-
-Files: contrib/pngminim/preader/pngusr.h
-Copyright: 2009, 2010-2013 Glenn Randers-Pehrson
-License: libpng
-
-Files: contrib/pngminim/encoder/pngusr.h
-	contrib/pngminim/decoder/pngusr.h
-Copyright: 2007, 2010-2013 Glenn Randers-Pehrson
-License: libpng
-
-Files: contrib/examples/pngpixel.c contrib/examples/iccfrompng.c
-	contrib/examples/pngtopng.c
-License: libpng
-Copyright: Written by John Cunningham Bowler, 2011
-
-Files: contrib/libtests/pngvalid.c contrib/libtests/makepng.c
-	contrib/libtests/gentests.sh contrib/libtests/pngstest.c
-	contrib/libtests/fakepng.c contrib/libtests/timepng.c
-	contrib/libtests/readpng.c contrib/libtests/pngunknown.c
-Copyright: 2013 Glenn Randers-Pehrson
+       contrib/visupng/VisualPng.c
+Copyright: 2000,2017 Willem van Schaik
 License: libpng
 
 Files: contrib/libtests/tarith.c
 Copyright: 2011-2013 John Cunningham Bowler
 License: libpng
 
-Files: contrib/tools/png-fix-itxt.c arm/arm_init.c arm/filter_neon_intrinsics.c
-Copyright: 2013 Glenn Randers-Pehrson
-License: libpng
+Files: contrib/oss-fuzz/*
+Copyright: 2017 Glenn Randers-Pehrson
+           2016 Google Inc.
+License: libpng OR Apache-2.0 OR BSD-3-clause
+
+Files: contrib/oss-fuzz/Dockerfile
+Copyright: 2016 Google Inc.
+License: Apache-2.0
 
 Files: debian/*
-Copyright: copyright (C) 2001 Philippe Troin <phil@fifi.org>
-	copyright 2002 Junichi Uekawa <dancer@debian.org>
-	copyright 2003 Josselin Mouette <joss@debian.org>
-	copyright 2006-2009 Anibal Monsalve Salazar <anibal@debian.org>
-	copyright 2011-2014 Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Copyright:      2001 Philippe Troin <phil@fifi.org>
+                2002 Junichi Uekawa <dancer@debian.org>
+                2003 Josselin Mouette <joss@debian.org>
+           2006-2009 Anibal Monsalve Salazar <anibal@debian.org>
+           2011-2014 Nobuhiro Iwamatsu <iwamatsu@debian.org>
+           2016-2018 Gianfranco Costamagna <locutusofborg@debian.org>
+           2016-2017 Tobias Frost <tobi@debian.org>
 License: GPL-2+
 
 License: expat
@@ -267,3 +258,45 @@ License: libpng
  .
    Permission to use, copy, modify, and distribute these images for any
    purpose and without fee is hereby granted.
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+  http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the full text of the Apache License
+ can be found in the file `/usr/share/common-licenses/Apache-2.0'.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+

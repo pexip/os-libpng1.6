@@ -17,7 +17,7 @@ Index: libpng1.6-1.6.21/scripts/libpng-config-body.in
  
      --libdir)
 +        echo >&1 "$(basename $0): --libdir option is disabled in Debian/Ubuntu"
-+	exit 1
++        exit 1
          echo ${libdir}
          ;;
  
@@ -55,7 +55,7 @@ Index: libpng1.6-1.6.21/libpng-config.in
  
      --libdir)
 +        echo >&1 "$(basename $0): --libdir option is disabled in Debian/Ubuntu"
-+	exit 1
++        exit 1
          echo ${libdir}
          ;;
  
