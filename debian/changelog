@@ -1,3 +1,17 @@
+libpng1.6 (1.6.28-1+deb9u1pexip1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- John-Mark Bell <jmb@pexip.com>  Fri, 24 May 2019 14:02:46 +0100
+
+libpng1.6 (1.6.28-1+deb9u1) stretch-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Call png_image_free_function without guarding it with png_safe_execute
+    (CVE-2019-7317) (Closes: #921355)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 18 Apr 2019 22:12:35 +0200
+
 libpng1.6 (1.6.28-1pexip1) pexip; urgency=medium
 
   * Prepare Pexip packaging

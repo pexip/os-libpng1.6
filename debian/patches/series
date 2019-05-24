@@ -1,1 +1,2 @@
 libpng-config.patch
+Call-png_image_free_function-without-guarding-it-wit.patch
