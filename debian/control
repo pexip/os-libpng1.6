@@ -11,7 +11,7 @@ Standards-Version: 3.9.8
 VCS-Git: https://anonscm.debian.org/git/collab-maint/libpng1.6.git
 VCS-Browser: https://anonscm.debian.org/cgit/collab-maint/libpng1.6.git
 Homepage: http://libpng.org/pub/png/libpng.html
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: libpng16-16
 Architecture: any
