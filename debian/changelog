@@ -1,22 +1,216 @@
+libpng1.6 (1.6.36-6) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 08 Apr 2019 10:55:25 +0200
+
+libpng1.6 (1.6.36-5exp1) experimental; urgency=medium
+
+  * Drop Anibal from uploaders list,
+    thank you for your nice work! (Closes: #925014)
+  * Update copyright years.
+  * Drop patch 272.patch, superseeded by upstream commits:
+    70d122aac42933ab8a708c538f973c3307853212.patch (uncommented)
+    82ae623ec9bc3cb5c68aad22596a766e86d593b7.patch
+    a627bd26a375f5c41d54f90a47c838157d1bec97.patch
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 20 Mar 2019 11:58:35 +0100
+
+libpng1.6 (1.6.36-5) unstable; urgency=medium
+
+  * Tweak old 272 patch to add the only relevant part of commit
+    70d122aac42933ab8a708c538f973c3307853212.patch
+  * Drop 70d122aac42933ab8a708c538f973c3307853212.patch, it breaks the
+    testsuite.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 05 Feb 2019 12:54:50 +0100
+
+libpng1.6 (1.6.36-4) unstable; urgency=high
+
+  * debian/patches/70d122aac42933ab8a708c538f973c3307853212.patch,
+    debian/patches/8439534daa1d3a5705ba92e653eda9251246dd61.patch:
+    - new fixes for arm64 and general test failures (and leaks)
+  * debian/patches/CVE-2019-7317.patch:
+    - fix for CVE 2019-7317 (Closes: #921355)
+      Thanks Salvatore Bonaccorso for your report!
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 05 Feb 2019 11:43:24 +0100
+
+libpng1.6 (1.6.36-3) unstable; urgency=medium
+
+  * debian/patches/272.patch:
+    - upstream fix for arm64 test failures.
+    - drop previous revert-* patches
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 31 Dec 2018 09:24:07 +0100
+
+libpng1.6 (1.6.36-2) unstable; urgency=medium
+
+  * Update watch file for github location
+  * Add apng support, like what is done in arch linux
+    - https://github.com/glennrp/libpng/issues/267
+  * d/p/revert-{7734cda20cf1236aef60f3bbd2267c97bbb40869,
+    1ceaa83a844cd3ecef25279d60720f910b96f297,
+    b66ed711315c46ef6c556c83c0074ecdcbd9937f}.patch:
+    revert on arm64 only the chromebook optimizations, they are
+    making the build fail.
+    - discussion at https://github.com/glennrp/libpng/issues/266
+  [ Mattia Rizzolo ]
+  * Fixup std-version numbering
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 28 Dec 2018 14:13:52 +0100
+
+libpng1.6 (1.6.36-1) unstable; urgency=medium
+
+  * New upstream version 1.6.36
+  * update copyright file
+  * Bump std-version to 4.3.0.1, no changes required
+  * drop patch 8a057: upstream
+  * Add nocheck profile in rules file
+
+  [ Ondřej Nový <onovy@debian.org> ]
+  * d/changelog: Remove trailing whitespaces
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Thu, 27 Dec 2018 13:47:10 +0100
+
+libpng1.6 (1.6.34-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/patches/8a05766cb74af05c04c53e6c9d60c13fc4d59bf2.patch:
+    Closes: #903430
+    CVE-2018-13785
+
+  [ Gianfranco Costamagna ]
+  * Upload to unstable
+  * Switch VCS fields to salsa.d.o
+  * Bump std-version to 4.1.5, no changes required
+  * Switch copyright in https mode
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 10 Jul 2018 13:17:30 +0200
+
+libpng1.6 (1.6.34-1) unstable; urgency=medium
+
+  * New upstream version 1.6.34
+  * Remove files removed upstream (the failing png files)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 29 Sep 2017 18:54:51 +0200
+
+libpng1.6 (1.6.33-1) unstable; urgency=medium
+
+  * New upstream version 1.6.33
+  * Drop idat patch: upstream
+  * Update copyright
+  * Bump std-version to 4.1.1
+  * Remove some new test png files that make testsuite fail
+    (they fail also on older libpng version, just they weren't available
+     status is tracked at https://sourceforge.net/p/libpng/bugs/271/ )
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 29 Sep 2017 08:44:54 +0200
+
+libpng1.6 (1.6.32-3) unstable; urgency=high
+
+  * Fix invalid IDAT images, thanks Felix Geyer for the debug/bug reassign!
+    (Closes: #876563)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 26 Sep 2017 10:15:08 +0200
+
+libpng1.6 (1.6.32-2) unstable; urgency=medium
+
+  * Bump std-version to 4.1.0, now priority is extra
+  * Add missing newline on copyright entry, making lintian sad
+  * Move the examples into the main libpng-dev (Closes: #876244)
+    - thanks Helmut Grohne for the useful bug report!
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sun, 17 Sep 2017 10:37:44 +0200
+
+libpng1.6 (1.6.32-1) unstable; urgency=medium
+
+  * New upstream version 1.6.32
+  * Update copyright file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 26 Aug 2017 23:43:31 +0200
+
+libpng1.6 (1.6.31-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update d/watch to point to ftp site and to verify gpg signature.
+  * fix-arm-build.patch removed, fixed upstream.
+  * Update d/copyright (years and add new maintainers) and remove some
+    redudant entries.
+
+ -- Tobias Frost <tobi@debian.org>  Fri, 04 Aug 2017 07:10:47 +0200
+
+libpng1.6 (1.6.30-2) unstable; urgency=medium
+
+  * Fix arm* build failures with upstream patch
+    (Closes: #867670)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sun, 09 Jul 2017 01:02:17 +0200
+
+libpng1.6 (1.6.30-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright
+  * Bump std-version to 4.0.0
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 08 Jul 2017 12:52:44 +0200
+
+libpng1.6 (1.6.29-3) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 12 Jun 2017 11:22:51 +0200
+
+libpng1.6 (1.6.29-2) experimental; urgency=medium
+
+  * Enable PIE eveywhere
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 22 Apr 2017 14:46:34 +0200
+
+libpng1.6 (1.6.29-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Drop fix multiarch patch: upstream
+  * Use autoreconf.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 10 Apr 2017 08:39:26 +0200
+
 libpng1.6 (1.6.28-1+deb9u1pexip1) pexip; urgency=medium
 
   * New upstream release
 
  -- John-Mark Bell <jmb@pexip.com>  Fri, 24 May 2019 14:02:46 +0100
 
-libpng1.6 (1.6.28-1+deb9u1) stretch-security; urgency=high
-
-  * Non-maintainer upload by the Security Team.
-  * Call png_image_free_function without guarding it with png_safe_execute
-    (CVE-2019-7317) (Closes: #921355)
-
- -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 18 Apr 2019 22:12:35 +0200
-
 libpng1.6 (1.6.28-1pexip1) pexip; urgency=medium
 
   * Prepare Pexip packaging
 
  -- John-Mark Bell <jmb@pexip.com>  Fri, 06 Jul 2018 14:59:18 +0000
+
+libpng1.6 (1.6.28-1exp4) experimental; urgency=medium
+
+  * Override autoreconf due to debhelper bug 844504
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Thu, 02 Mar 2017 16:29:47 +0100
+
+libpng1.6 (1.6.28-1exp3) experimental; urgency=medium
+
+  * No-autoreconf for cmake builds
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Thu, 02 Mar 2017 16:14:47 +0100
+
+libpng1.6 (1.6.28-1exp2) experimental; urgency=medium
+
+  * Readd multiarch patch, it was merged by
+    upstream on master but not on 1.6 branch
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Thu, 02 Mar 2017 15:07:10 +0100
+
+libpng1.6 (1.6.28-1exp1) experimental; urgency=medium
+
+  * Switch to cmake
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 09 Jan 2017 19:53:06 +0100
 
 libpng1.6 (1.6.28-1) unstable; urgency=medium
 
@@ -263,7 +457,7 @@ libpng1.6 (1.6.10-2) experimental; urgency=low
 libpng1.6 (1.6.10-1) experimental; urgency=low
 
   * New upstream release (Closes: #740585)
-    Fixed CVE-2014-0333. 
+    Fixed CVE-2014-0333.
   * Update overrides files.
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Sat, 22 Mar 2014 09:58:12 +0900
@@ -1400,4 +1594,3 @@ libpng (0.89c-1) unstable; urgency=low
   * Moved to new source packaging format.
 
  -- Michael Alan Dorman <mdorman@calder.med.miami.edu>  Thu, 12 Sep 1996 15:19:35 -0400
-
