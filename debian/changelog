@@ -1,3 +1,70 @@
+libpng1.6 (1.6.37-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Wrap long lines in changelog entries: 1.2.5-5.
+
+  [ Gianfranco Costamagna ]
+  * debian/patches/326.patch:
+    - add upstream proposed patch to fix a decode fail with invalid eXIf
+      chunks (Closes: #969502)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 16 Sep 2020 08:02:32 +0200
+
+libpng1.6 (1.6.37-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+  * Rely on pre-initialized dpkg-architecture variables.
+  * Fix day-of-week for changelog entry 1.0.0-0.1.
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Gianfranco Costamagna ]
+  * Bump std-version to 4.5.0, no changes required
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 07 Feb 2020 20:00:13 +0100
+
+libpng1.6 (1.6.37-1) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 02 Jul 2019 09:38:43 +0200
+
+libpng1.6 (1.6.37-1~exp4) experimental; urgency=medium
+
+  * debian/patches/72fa126446460347a504f3d9b90f24aed1365595.patch:
+    - cherry-pick upstream possible fix for tests not being parallel-safe
+      (Closes: #920657)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 23 Apr 2019 18:04:43 +0200
+
+libpng1.6 (1.6.37-1~exp3) experimental; urgency=medium
+
+  * Fix two lintian warnings:
+    - drop upstream signing key, upstream seems to have stopped tarball
+      signatures when moved to github (see upstream issue: #287)
+    - double "version" tag in debian/watch
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 23 Apr 2019 13:15:04 +0200
+
+libpng1.6 (1.6.37-1~exp2) experimental; urgency=medium
+
+  * Simplify tests, by not passing the .libs directory during their
+    execution
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 15 Apr 2019 12:34:29 +0200
+
+libpng1.6 (1.6.37-1~exp1) experimental; urgency=medium
+
+  * New upstream version 1.6.37
+    - upload to experimental because of freeze
+  * Update watch file for github publish site
+  * Update copyright years and text for pngminus
+  * Drop all upstream patches, patch refresh for apng patch
+  * Bump compat level to 12
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 15 Apr 2019 10:36:39 +0200
+
 libpng1.6 (1.6.36-6) unstable; urgency=medium
 
   * Upload to unstable
@@ -1230,7 +1297,8 @@ libpng3 (1.2.5-6) unstable; urgency=low
 
 libpng3 (1.2.5-5) unstable; urgency=low
 
-  * scripts/makefile.linux: LIBADDFLAGS introduced, for shared library lib additional
+  * scripts/makefile.linux: LIBADDFLAGS introduced, for shared library lib
+    additional
   flags, and use that for shared library.
   - this should fix build failure (closes: #166704)
   Thanks Daniel Schepler <schepler@math.berkeley.edu> for reporting.
@@ -1492,7 +1560,7 @@ libpng (1.0.0-0.1) unstable; urgency=low
   * Added `-f makefile.lnx' to make invocations in debian/rules.
   * Removed `ldconfig' call from postrm.
 
- -- Joel Klecker <jk@espy.org>  Tue, 4 Mar 1998 17:58:05 -0800
+ -- Joel Klecker <jk@espy.org>  Wed, 04 Mar 1998 17:58:05 -0800
 
 libpng0 (0.96-5) unstable; urgency=low
 
