@@ -1,3 +1,9 @@
+libpng1.6 (1.6.37-3pexip1) pexip; urgency=medium
+
+  * Initial bullseye build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 02 Jun 2022 14:42:27 +0100
+
 libpng1.6 (1.6.37-3) unstable; urgency=medium
 
   [ Debian Janitor ]
