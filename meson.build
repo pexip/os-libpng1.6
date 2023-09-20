@@ -14,7 +14,7 @@ include = include_directories('.')
 if cc.get_define('__ANDROID__') != ''
   zlib_dep = cc.find_library('z')
 else
-  zlib_dep = dependency('zlib')
+  zlib_dep = dependency('zlib', fallback : ['zlib', 'zlib_dep'])
 endif
 
 c_args = []
