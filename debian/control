@@ -12,7 +12,7 @@ Vcs-Browser: https://salsa.debian.org/debian/libpng1.6
 Vcs-Git: https://salsa.debian.org/debian/libpng1.6.git
 Homepage: http://libpng.org/pub/png/libpng.html
 Rules-Requires-Root: no
-XS-Pexip-Upstream: http://deb.debian.org/debian/ bullseye
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: libpng16-16
 Architecture: any
