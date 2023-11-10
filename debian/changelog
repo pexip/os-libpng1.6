@@ -1,3 +1,51 @@
+libpng1.6 (1.6.39-2) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Support the noudeb build profile. (Closes: #1024944)
+
+  [ Gianfranco Costamagna ]
+  * Upload to sid
+
+ -- Helmut Grohne <helmut@subdivi.de>  Sun, 27 Nov 2022 20:59:26 +0100
+
+libpng1.6 (1.6.39-1) unstable; urgency=medium
+
+  * New upstream version 1.6.39
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 26 Nov 2022 15:21:15 +0100
+
+libpng1.6 (1.6.38-2) unstable; urgency=medium
+
+  * Add manpages to build
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 21 Sep 2022 14:46:45 +0200
+
+libpng1.6 (1.6.38-1) unstable; urgency=medium
+
+  * New upstream version 1.6.38
+  * Drop all patches, now upstream
+  * Refactor copyright file and bump copyright years
+  * Drop as-needed flag, now default
+  * Add not-installed file
+  * Move installexamples to libpng-dev.examples file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 21 Sep 2022 12:36:17 +0200
+
+libpng1.6 (1.6.37-5) unstable; urgency=medium
+
+  * debian/patches/eb6767273a4eb5d6f4ad528370d7262cf7aa220c.patch:
+    - cherry-pick upstream fix for memory lieak in png_handle_eXIf function
+      (LP: #1960326)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 25 Apr 2022 19:29:57 +0200
+
+libpng1.6 (1.6.37-4) unstable; urgency=medium
+
+  * Drop apng support, seems to break chromium ability to open
+    apng files (Closes: #1005850).
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 22 Apr 2022 18:48:37 +0200
+
 libpng1.6 (1.6.37-3pexip3) pexip-bullseye; urgency=medium
 
   * Bullseye rebuild for ARM64 inclusion
