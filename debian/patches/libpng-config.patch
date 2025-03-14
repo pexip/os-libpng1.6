@@ -3,7 +3,7 @@ Index: libpng1.6-1.6.21/scripts/libpng-config-body.in
 ===================================================================
 --- libpng1.6-1.6.21.orig/scripts/libpng-config-body.in
 +++ libpng1.6-1.6.21/scripts/libpng-config-body.in
-@@ -7,7 +7,7 @@
+@@ -6,7 +6,7 @@
  Known values for OPTION are:
  
    --prefix        print libpng prefix
@@ -12,7 +12,7 @@ Index: libpng1.6-1.6.21/scripts/libpng-config-body.in
    --libs          print library linking information
    --ccopts        print compiler options
    --cppflags      print pre-processor flags
-@@ -58,6 +58,8 @@
+@@ -57,6 +57,8 @@
          ;;
  
      --libdir)

@@ -1,6 +1,8 @@
 usr/bin/libpng-config
 usr/bin/libpng16-config
 usr/include
+usr/lib/*/cmake
+usr/lib/*/libpng
 usr/lib/*/pkgconfig
 usr/lib/*/libpng.a
 usr/lib/*/libpng16.a
