@@ -1,3 +1,21 @@
+libpng1.6 (1.6.39-2+pexip24u4) pexip; urgency=medium
+
+  * Backport CVE fixes
+  * Pre-requisites:
+    https://github.com/pnggroup/libpng/commit/ea094764f3436e3c6524622724c2d342a3eff235
+    https://github.com/pnggroup/libpng/commit/0fa3c0f698c2ca618a0fa44e10a822678df85373
+  * CVE-2025-64505:
+    https://github.com/pnggroup/libpng/commit/6a528eb5fd0dd7f6de1c39d30de0e41473431c37
+  * CVE-2025-64506:
+    https://github.com/pnggroup/libpng/commit/2bd84c019c300b78e811743fbcddb67c9d9bf821
+  * CVE-2025-64720:
+    https://github.com/pnggroup/libpng/commit/08da33b4c88cfcd36e5a706558a8d7e0e4773643
+  * CVE-2025-65018:
+    https://github.com/pnggroup/libpng/commit/16b5e3823918840aae65c0a6da57c78a5a496a4d
+    https://github.com/pnggroup/libpng/commit/218612ddd6b17944e21eda56caf8b4bf7779d1ea
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Mon, 24 Nov 2025 12:38:03 +0000
+
 libpng1.6 (1.6.39-2+pexip24u3) pexip-bookworm; urgency=medium
 
   * New versioning scheme
