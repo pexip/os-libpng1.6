@@ -1,8 +1,6 @@
 Description: this patch is needed to strip arch-dep bits and get a multiarch -dev package.
-Index: libpng1.6-1.6.21/scripts/libpng-config-body.in
-===================================================================
---- libpng1.6-1.6.21.orig/scripts/libpng-config-body.in
-+++ libpng1.6-1.6.21/scripts/libpng-config-body.in
+--- a/scripts/libpng-config-body.in
++++ b/scripts/libpng-config-body.in
 @@ -7,7 +7,7 @@
  Known values for OPTION are:
  
@@ -21,10 +19,8 @@ Index: libpng1.6-1.6.21/scripts/libpng-config-body.in
          echo ${libdir}
          ;;
  
-Index: libpng1.6-1.6.21/libpng-config.in
-===================================================================
---- libpng1.6-1.6.21.orig/libpng-config.in
-+++ libpng1.6-1.6.21/libpng-config.in
+--- a/libpng-config.in
++++ b/libpng-config.in
 @@ -14,12 +14,13 @@
  version="@PNGLIB_VERSION@"
  prefix="@prefix@"
