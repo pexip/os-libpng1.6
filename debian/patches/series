@@ -1,2 +1,9 @@
 libpng-config.patch
 #libpng-1.6.39-apng.patch
+CVE-2025-64505.patch
+CVE-2025-64506.patch
+CVE-2025-64720.patch
+CVE-2025-65018-part1.patch
+CVE-2025-65018-part2.patch
+CVE-2025-66293-part1.patch
+CVE-2025-66293-part2.patch

@@ -1,3 +1,16 @@
+libpng1.6 (1.6.48-1+deb13u1) trixie-security; urgency=high
+
+  * Security upload targeting trixie.
+  * Backport fixes for:
+    - CVE-2025-64505 - Heap buffer over-read (Closes: #1121219)
+    - CVE-2025-64506 - Heap buffer over-read (Closes: #1121218)
+    - CVE-2025-64720 - Heap buffer overflow (Closes: #1121217)
+    - CVE-2025-65018 - Heap buffer overflow (Closes: #1121216)
+    - CVE-2025-66293 - Out-of-bounds read (Closes: #1121877)
+  * Set gbp.conf for trixie and enable salsa CI
+
+ -- Tobias Frost <tobi@debian.org>  Sat, 06 Dec 2025 11:10:16 +0100
+
 libpng1.6 (1.6.48-1) unstable; urgency=medium
 
   * New upstream version 1.6.48
