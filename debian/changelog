@@ -1,8 +1,8 @@
-libpng1.6 (1.6.48-1+deb13u1+pexip25u3) pexip-trixie; urgency=medium
+libpng1.6 (1.6.48-1+pexip25u3+deb13u1) pexip-trixie; urgency=medium
 
   * New upstream release.
 
- -- Mark Hymers <mark.hymers@pexip.com>  Wed, 10 Dec 2025 10:52:53 +0000
+ -- Mark Hymers <mark.hymers@pexip.com>  Wed, 10 Dec 2025 11:08:32 +0000
 
 libpng1.6 (1.6.48-1+deb13u1) trixie-security; urgency=high
 
