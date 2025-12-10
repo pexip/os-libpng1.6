@@ -1,14 +1,8 @@
-libpng1.6 (1.6.48-1+pexip25u2) pexip-trixie; urgency=medium
+libpng1.6 (1.6.48-1+deb13u1+pexip25u3) trixie-security; urgency=medium
 
-  * Trixie build for product distribution
+  * New upstream release.
 
- -- Mark Hymers <mark.hymers@pexip.com>  Thu, 04 Dec 2025 13:38:53 +0000
-
-libpng1.6 (1.6.48-1+pexip25u1) pexip-trixie; urgency=medium
-
-  * New upstream release
-
- -- Mark Hymers <mark.hymers@pexip.com>  Thu, 31 Jul 2025 13:27:48 +0100
+ -- Mark Hymers <mark.hymers@pexip.com>  Wed, 10 Dec 2025 10:52:53 +0000
 
 libpng1.6 (1.6.48-1+deb13u1) trixie-security; urgency=high
 
@@ -22,6 +16,18 @@ libpng1.6 (1.6.48-1+deb13u1) trixie-security; urgency=high
   * Set gbp.conf for trixie and enable salsa CI
 
  -- Tobias Frost <tobi@debian.org>  Sat, 06 Dec 2025 11:10:16 +0100
+
+libpng1.6 (1.6.48-1+pexip25u2) pexip-trixie; urgency=medium
+
+  * Trixie build for product distribution
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 04 Dec 2025 13:38:53 +0000
+
+libpng1.6 (1.6.48-1+pexip25u1) pexip-trixie; urgency=medium
+
+  * New upstream release
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 31 Jul 2025 13:27:48 +0100
 
 libpng1.6 (1.6.48-1) unstable; urgency=medium
 
