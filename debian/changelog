@@ -1,3 +1,16 @@
+libpng1.6 (1.6.39-2+deb12u1) bookworm-security; urgency=high
+
+  * Security upload targeting boowkorm.
+  * Backport fixes for:
+    - CVE-2025-64505 - Heap buffer over-read (Closes: #1121219)
+    - CVE-2025-64506 - Heap buffer over-read (Closes: #1121218)
+    - CVE-2025-64720 - Heap buffer overflow (Closes: #1121217)
+    - CVE-2025-65018 - Heap buffer overflow (Closes: #1121216)
+    - CVE-2025-66293 - Out-of-bounds read (Closes: #1121877)
+  * Set gbp.conf for bookworm and enable salsa CI
+
+ -- Tobias Frost <tobi@debian.org>  Sat, 06 Dec 2025 11:15:39 +0100
+
 libpng1.6 (1.6.39-2+pexip24u4) pexip; urgency=medium
 
   * Backport CVE fixes
