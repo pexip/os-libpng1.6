@@ -1,3 +1,9 @@
+libpng1.6 (1.6.39-2+pexip24u5+deb12u1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Huw Jones <huw@pexip.com>  Mon, 22 Dec 2025 15:15:41 +0000
+
 libpng1.6 (1.6.39-2+deb12u1) bookworm-security; urgency=high
 
   * Security upload targeting boowkorm.
