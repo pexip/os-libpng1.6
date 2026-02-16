@@ -1,3 +1,18 @@
+libpng1.6 (1.6.48-1+deb13u3) trixie-security; urgency=high
+
+  * Security upload targeting trixie.
+    - CVE-2026-25646 - Heap buffer overflow (Closes: #1127566)
+
+ -- Tobias Frost <tobi@debian.org>  Mon, 16 Feb 2026 18:43:52 +0100
+
+libpng1.6 (1.6.48-1+deb13u2) trixie; urgency=medium
+
+  * Backporting fixes from 1.6.54 for stable:
+    - CVE-2026-22801 - Heap buffer over-read (Closes: #1125444
+    - CVE-2026-22695 - Heap buffer over-read (Closes: #1125443)
+
+ -- Tobias Frost <tobi@debian.org>  Sat, 24 Jan 2026 09:32:42 +0100
+
 libpng1.6 (1.6.48-1+deb13u1) trixie-security; urgency=high
 
   * Security upload targeting trixie.
