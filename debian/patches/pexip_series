@@ -1,2 +1,3 @@
 0001-Add-meson-build-system.patch
 0002-Remove-legacy-apple-include-check.patch
+0003-pkgconfig-added-relocatable-prefix.patch

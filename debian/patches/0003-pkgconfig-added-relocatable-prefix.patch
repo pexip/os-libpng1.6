@@ -1,0 +1,23 @@
+From 86b1bed3ec5df5eb36d4d50e409cb8e4daa268d3 Mon Sep 17 00:00:00 2001
+From: Tulio Beloqui <tulio@pexip.com>
+Date: Wed, 18 Mar 2026 15:39:05 +0100
+Subject: [PATCH] pkgconfig: added relocatable prefix
+
+---
+ libpng.pc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libpng.pc.in b/libpng.pc.in
+index de127d4..1eb3e4d 100644
+--- a/libpng.pc.in
++++ b/libpng.pc.in
+@@ -1,4 +1,4 @@
+-prefix=@prefix@
++prefix=${pcfiledir}/../..
+-exec_prefix=@exec_prefix@
++exec_prefix=${pcfiledir}/../..
+ libdir=@libdir@
+ includedir=@includedir@/libpng@PNGLIB_MAJOR@@PNGLIB_MINOR@
+-- 
+2.43.0
+
