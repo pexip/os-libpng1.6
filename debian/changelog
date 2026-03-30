@@ -1,3 +1,11 @@
+libpng1.6 (1.6.48-1+deb13u4) trixie-security; urgency=medium
+
+  * Security upload targeting trixie.
+    - CVE-2026-33416 - Use-after-free (Closes: #1132012)
+    - CVE-2026-33636 - OOB read/write on ARM plattforms (Closes: #1132013)
+
+ -- Tobias Frost <tobi@debian.org>  Mon, 30 Mar 2026 20:56:49 +0200
+
 libpng1.6 (1.6.48-1+deb13u3) trixie-security; urgency=high
 
   * Security upload targeting trixie.
