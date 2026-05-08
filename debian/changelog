@@ -1,3 +1,11 @@
+libpng1.6 (1.6.48-1+deb13u5) trixie-security; urgency=high
+
+  * Security upload targeting trixie.
+  * CVE-2026-34757 - Use after free. (Closes: #1133051)
+  * Cherry-pick upstream regression fix for previously fixed CVE 2026-33416.
+
+ -- Tobias Frost <tobi@debian.org>  Fri, 08 May 2026 14:19:08 +0200
+
 libpng1.6 (1.6.48-1+deb13u4) trixie-security; urgency=medium
 
   * Security upload targeting trixie.
