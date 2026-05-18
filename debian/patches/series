@@ -15,3 +15,7 @@ CVE-2026-33416-part2.patch
 CVE-2026-33416-part3.patch
 CVE-2026-33416-part4.patch
 CVE-2026-33636.patch
+CVE-2026-34757-part1.patch
+CVE-2026-34757-part2.patch
+CVE-2026-33416-regression-fix.patch
+CVE-2026-33416-regression-fix-test.patch
