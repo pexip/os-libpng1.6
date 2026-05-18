@@ -1,3 +1,9 @@
+libpng1.6 (1.6.48-1+pexip25u6+deb13u5) pexip-trixie; urgency=medium
+
+  * New upstream release
+
+ -- Huw Jones <huw@pexip.com>  Mon, 18 May 2026 15:45:37 +0100
+
 libpng1.6 (1.6.48-1+deb13u5) trixie-security; urgency=high
 
   * Security upload targeting trixie.
