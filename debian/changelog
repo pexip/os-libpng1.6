@@ -1,3 +1,9 @@
+libpng1.6 (1.6.48-1+deb13u6) trixie-security; urgency=medium
+
+  * CVE-2026-46675
+
+ -- Moritz Mühlenhoff <jmm@debian.org>  Tue, 29 Sep 2026 20:31:03 +0200
+
 libpng1.6 (1.6.48-1+deb13u5) trixie-security; urgency=high
 
   * Security upload targeting trixie.
