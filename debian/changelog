@@ -1,3 +1,15 @@
+libpng1.6 (1.6.48-1+pexip25u7+deb13u6) pexip-trixie; urgency=medium
+
+  * New upstream release with security update
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Fri, 02 Oct 2026 15:41:33 +0100
+
+libpng1.6 (1.6.48-1+deb13u6) trixie-security; urgency=medium
+
+  * CVE-2026-46675
+
+ -- Moritz Mühlenhoff <jmm@debian.org>  Tue, 29 Sep 2026 20:31:03 +0200
+
 libpng1.6 (1.6.48-1+pexip25u6+deb13u5) pexip-trixie; urgency=medium
 
   * New upstream release
